@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Formulário de Perfil para DEVS</h2>
+    <p>Nos ajude a conhecer melhor seus conhecimentos e preferências na área de programação!</p>
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label>Nome: <input type="text" name="nome" required></label><br>
+            <label>Email: <input type="email" name="email" required></label><br>
+            <label>Data de Nascimento: <input type="date" name="data_nascimento"></label><br>
+            <label>Senha: <input type="password" name="senha" required></label><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Preferências</legend>
+            <label>Gênero:</label>
+            <input type="radio" name="genero" value="masculino"> Masculino
+            <input type="radio" name="genero" value="feminino"> Feminino
+            <br>
+            
+            <label>Quais linguagens você usa?</label><br>
+            <input type="checkbox" name="linguagens" value="html"> HTML
+            <input type="checkbox" name="linguagens" value="css"> CSS
+            <input type="checkbox" name="linguagens" value="js"> JavaScript <br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Outras Informações</legend>
+            <label>Cor favorita: <input type="color" name="cor"></label><br>
+            <label>Telefone: <input type="tel" name="telefone"></label><br>
+            <label>Site pessoal: <input type="url" name="site"></label><br>
+            <label>Tempo de experiência (anos): <input type="number" name="experiencia" min="0"></label><br>
+            <label>Selecione um arquivo: <input type="file" name="arquivo"></label><br>
+            <label>Escolha um horário: <input type="time" name="horario"></label><br>
+        </fieldset>
+        
+        <button type="reset">Resetar</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
